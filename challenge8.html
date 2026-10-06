@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Challenge 8</title>
+</head>
+
+<body>
+
+<script>
+
+    // Welcome message
+    alert("Welcome to our membership system!");
+
+    // Ask for the user's name
+    let name = prompt("What is your name?");
+
+    // Use Guest when Cancel or an empty value is provided
+    if (name === null || name.trim() === "") {
+        name = "Guest";
+    }
+
+    // Ask for age
+    const ageInput = prompt("What is your age?");
+    const age = Number(ageInput);
+
+    // Check whether age is valid
+    const validAge =
+        !Number.isNaN(age) &&
+        age >= 1 &&
+        age <= 120;
+
+    // Determine membership
+    const membership =
+        age < 18 ? "Youth" :
+        age < 60 ? "Adult" :
+        "Senior";
+
+    // Ask about newsletter
+    const subscribed =
+        confirm("Do you want to subscribe to our newsletter?");
+
+    // Display results
+    alert(
+        "Name: " + name +
+        "\nAge: " + age +
+        "\nMembership: " + membership +
+        "\nNewsletter: " +
+        (subscribed ? "Subscribed" : "Not subscribed")
+    );
+
+</script>
+
+</body>
+</html>
