@@ -32,7 +32,7 @@ console.log(/abc/ instanceof RegExp);
 
 // delete
 const user = {
-    name: "Jack Mabaso",
+    name: "Lerato",
     age: 25,
     role: "student"
 };
