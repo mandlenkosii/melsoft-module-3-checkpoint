@@ -1,4 +1,5 @@
 // CHALLENGE 1 : Calculating the employee's salary
+// 1. Arithemetic operations
 
 let grossSalary = 45000; //  Gross salary
 let taxRate = "25%"; //  tax rate (25%)
@@ -22,3 +23,19 @@ let totalDeductions = taxAmount + uifAmount + medicalAid;
 let netSalary = grossSalary - totalDeductions;
 
 console.log("Net Salary: R" + netSalary); // Output the net salary
+
+//2. Assignment operators
+
+let cartTotal = 0;
+
+cartTotal += 150;
+cartTotal += 85;
+cartTotal += 220;
+
+// Apply discount
+cartTotal *= 0.10;
+
+// Apply VAT
+cartTotal *= 1.15;
+
+console.log("Cart total: R" + cartTotal);
