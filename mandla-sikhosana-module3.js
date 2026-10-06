@@ -57,3 +57,15 @@ console.log("Valid age:", validAge);
 console.log("Valid password:", validPassword);
 console.log("Matching emails:", matchingEmails);
 
+//4. Logical operators
+
+const isLoggedIn = true;
+const isEmailVerified = true;
+const isAdmin = true;
+
+const canAccessDashboard = (isLoggedIn && isEmailVerified ) || isAdmin; // User can access dashboard if they are logged in, email verified, or they are an admin
+
+console.log("Can access dashboard:", canAccessDashboard);
+
+
+
