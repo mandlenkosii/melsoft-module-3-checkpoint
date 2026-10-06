@@ -16,6 +16,7 @@ console.log(10 - 4 - 2);
 
 // 4
 // Prediction: 64, the power of 2**3 is 8 and then 8**2 is 64.
+// Output was 512
 console.log(2 ** 3 ** 2);
 
 // 5
@@ -36,6 +37,7 @@ console.log(true && false || true && true);
 
 // 9
 // Prediction: true because !false is true, and !!0 is false, so the overall expression evaluates to true.
+// Output was false
 console.log(!false && !!0);
 
 // 10
@@ -47,7 +49,8 @@ console.log(5 > 3 && 10 < 20 || !(2 === "2"));
 console.log(1000 * 1.15 * 0.9);
 
 // 12
-// Prediction: "number1"
+// Prediction: "number"
+// Output was "number1" because the typeof operator returns a string, and then the + operator concatenates the string "number" with the number 1.
 console.log(typeof 5 + 1);
 
 // 13
@@ -61,3 +64,6 @@ console.log("5" + 3 * 2);
 // 15
 // Prediction: 4    
 console.log("5" - 3 + 2);
+
+/*I use parentheses to make my code easier to read and to show which operations should happen first, even when JavaScript can understand the code without them. This helps avoid confusion and makes the logic clearer to other developers.*/
+
