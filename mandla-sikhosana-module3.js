@@ -64,8 +64,36 @@ const isEmailVerified = true;
 const isAdmin = true;
 
 const canAccessDashboard = (isLoggedIn && isEmailVerified ) || isAdmin; // User can access dashboard if they are logged in, email verified, or they are an admin
-
 console.log("Can access dashboard:", canAccessDashboard);
 
+
+//5. Unary operator
+
+const ageInput = "30";
+const ageNumber = +ageInput; // Convert string to number using unary plus operator
+console.log("Age as number:", ageNumber);
+
+let isDarkMode = false;
+isDarkMode = !isDarkMode;
+console.log("Dark mode:", isDarkMode);
+
+//6. Ternary operator
+
+
+
+//7. String concatenation
+
+const firstName = "Mandla";
+const lastName = "Sikhosana";
+let age1 = 25;
+
+const greeting = "Hello, my name is " + firstName + " " + lastName + " and I am " + age1                
++ " years old.";
+console.log(greeting);
+
+/* I understand that ++x increases the value before it is used, while x++ uses the current value first and then increases it. For example, console.log(++x) gives the increased value, while console.log(x++) gives the original value.*/
+
+/* I would use % to check if a number is even or odd, to perform something at regular intervals such as every 5 items, and to cycle through a fixed range like days of the week.
+Nested ternary: I don't think nested ternaries are always bad, but I would avoid them when they make the code difficult to read. If there are several or complicated conditions, I would rather use if...else or switch because it is easier to understand and maintain.*/
 
 
