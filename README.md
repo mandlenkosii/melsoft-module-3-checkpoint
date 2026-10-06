@@ -1,7 +1,6 @@
 # Module 3: JavaScript Operators
 
 **Name:** Mandla Sikhosana
-**Email:** jjuniorsikhosana@gmail.com
 
 ## Description
 
